@@ -1,5 +1,5 @@
 function grab(name) {
 
-	$('#contents').load(name + '.htm');
+	$('#contents').load('html' + name + '.htm');
 
 }
