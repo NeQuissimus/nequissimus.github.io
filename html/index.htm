@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>NeQuissimus Online - by Tim Steinbach</title>
+	<link rel="shortcut icon" href="../img/sphere_fav.png" />
+	<style type="text/css">
+		@import "../css/style.css";	
+		@import "../css/opera.css";  
+		@import "../css/ff.css";
+		@import "../css/webkit.css";
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="../js/quickjq.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header" title="Header banner">	
+			<h1>NeQuissimus Online</h1>
+		</div>
+		<nav>
+			<div id="navigation">
+				<ul>
+					<li><a href="#" onclick="javascript:grab('home');">Home</a></li>
+					<li><a href="#" onclick="javascript:grab('blog');">Blog</a></li>
+					<li><a href="#" onclick="javascript:grab('about');">About</a></li>
+					<li><a href="#" onclick="javascript:grab('opinions');">Opinions</a></li>
+					<li><a href="#" onclick="javascript:grab('social');">Social Media</a></li>
+					<li><div id="a_portfolio" class="subnavi">
+							<a href="#">Portfolio</a>
+							<div id="nav_portfolio">
+								<ul>
+									<li>
+										<a href="#" onclick="javascript:grab('carbonkiwi');">CarbonKiwi</a>
+									</li>
+									<li>
+										<a href="#" onclick="javascript:grab('configmaker');">ConfigMaker</a>
+									</li>
+									<li>
+										<a href="#" onclick="javascript:grab('pogoping');">pogoPing</a>
+									</li>
+									<li>
+										<a href="#" onclick="javascript:grab('trillian2adium');">Trillian2Adium</a>
+									</li>	
+									<li>
+										<a href="#" onclick="javascript:grab('romealive');">RomeAlive</a>
+									</li>	
+								</ul>
+							</div>							
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<div id="main">
+		<div id="contents">			
+		</div>
+	</div>
+	
+	<footer>
+		<div id="footer">&copy; 2012 - Tim Steinbach</div>
+	</footer>
+	
+	<script type="text/javascript">
+		grab('home');
+		
+		var banners = ['niagara_falls.png', 'paris_grand.png'];
+		var i = Math.floor(Math.random() * banners.length);
+		$('#header').css({'background-image': 'url(../img/panoramas/' + banners[i] + ')'});        
+		</script>
+</body>
+</html>
