@@ -1,74 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>NeQuissimus Online - by Tim Steinbach</title>
-	<link rel="shortcut icon" href="img/sphere_fav.png" />
-	<style type="text/css">
-		@import "css/style.css";	
-		@import "css/opera.css";  
-		@import "css/ff.css";
-		@import "css/webkit.css";
-	</style>
-	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
-	<script type="text/javascript" src="js/quickjq.js"></script>
-</head>
-<body>
-	<header>
-		<div id="header" title="Header banner">	
-			<h1>NeQuissimus Online</h1>
-		</div>
-		<nav>
-			<div id="navigation">
-				<ul>
-					<li><a href="#" onclick="javascript:grab('home');">Home</a></li>
-					<li><a href="#" onclick="javascript:grab('blog');">Blog</a></li>
-					<li><a href="#" onclick="javascript:grab('about');">About</a></li>
-					<li><a href="#" onclick="javascript:grab('opinions');">Opinions</a></li>
-					<li><a href="#" onclick="javascript:grab('social');">Social Media</a></li>
-					<li><div id="a_portfolio" class="subnavi">
-							<a href="#">Portfolio</a>
-							<div id="nav_portfolio">
-								<ul>
-									<li>
-										<a href="#" onclick="javascript:grab('carbonkiwi');">CarbonKiwi</a>
-									</li>
-									<li>
-										<a href="#" onclick="javascript:grab('configmaker');">ConfigMaker</a>
-									</li>
-									<li>
-										<a href="#" onclick="javascript:grab('pogoping');">pogoPing</a>
-									</li>
-									<li>
-										<a href="#" onclick="javascript:grab('trillian2adium');">Trillian2Adium</a>
-									</li>	
-									<li>
-										<a href="#" onclick="javascript:grab('romealive');">RomeAlive</a>
-									</li>	
-								</ul>
-							</div>							
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	
-	<div id="main">
-		<div id="contents">			
-		</div>
-	</div>
-	
-	<footer>
-		<div id="footer">&copy; 2012 - Tim Steinbach</div>
-	</footer>
-	
-	<script type="text/javascript">
-		grab('home');
-		
-		var banners = ['niagara_falls.png', 'paris_grand.png'];
-		var i = Math.floor(Math.random() * banners.length);
-		$('#header').css({'background-image': 'url(img/panoramas/' + banners[i] + ')'});        
-		</script>
-</body>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="NeQuissimus Online : by Tim Steinbach" />
+
+    <script type="text/javascript" src="javascripts/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="javascripts/quickjq.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="shortcut icon" href="images/sphere_fav.png" />
+
+    <title>NeQuissimus Online</title>
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">  
+          <a id="facebook_banner" href="https://www.facebook.com/tim.steinbach"><img src="images/social/facebook.png" /></a>
+          <a id="linkedin_banner" href="http://ca.linkedin.com/in/timsteinbach"><img src="images/social/linkedin.png" /></a>
+          <a id="twitter_banner" href="https://twitter.com/#!/Tim_Steinbach"><img src="images/social/twitter.png" /></a>
+          <a id="forkme_banner" href="https://github.com/NeQuissimus">Fork Me on GitHub</a>    
+
+          <h1 id="project_title"><span class="shadow">NeQuissimus Online</span>&nbsp;<img src="images/sphere.png" id="sphere_logo" /></h1>
+          <h3><a href="#" onclick="javascript:grab('navigation');">&raquo; Navigation</a></h3>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <div style="min-height:320px; min-width:400px;">
+          <div id="contents"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">NeQuissimus Online maintained by <a href="https://github.com/NeQuissimus">Tim Steinbach</a> &laquo;&raquo; Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-30783993-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    <script type="text/javascript">
+      grab('home');
+    </script>
+
+  </body>
 </html>
