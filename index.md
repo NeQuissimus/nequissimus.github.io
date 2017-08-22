@@ -1,14 +1,18 @@
 # Social
 
-- [Facebook](https://www.facebook.com/tim.steinbach)
 - [GitHub](https://github.com/NeQuissimus)
 - [LinkedIn](http://ca.linkedin.com/in/timsteinbach)
 - [Twitter](https://twitter.com/#!/Tim_Steinbach)
+- [Keybase](https://keybase.io/nequissimus)
 
 # Blogs
 
-- <http://rmrf.eu/> - Technical blog about various topics, including OSX, Ubuntu and iOS
-- <http://xn--bi8h.tk/> - Blog with random pictures, all taken by me (The domain name represents the Unicode maple leaf)
+- <http://rmrf.eu/> - Technical blog about various topics, including macOS, NixOS and random topics
+
+# Hacking
+
+- [NixOS](https://nixos.org) ([Project member](https://github.com/orgs/NixOS/people?utf8=%E2%9C%93&query=NeQuissimus) since 2016)
+- [GitHub](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3ANeQuissimus+is%3Aclosed)
 
 # Writing
 
@@ -23,15 +27,13 @@
 - [Cross-platform ToDo-Liste todo.txt](http://nequissimus.github.com/doc/Todotxt_GER.pdf): Cross-platform ToDo list todo.txt (German)
 - [Awesome WM für (Arch)Linux](http://nequissimus.github.com/doc/AwesomeWM_GER.pdf): Awesome WM for (Arch)Linux (German)
 
-# Apps
-
-## Trillian2Adium
-
-A lot of people have recently bought Macs after having had PCs for years. Trillian is one of the most popular messengers for Windows. Wouldn’t you like to have all your older logs on your new computer? With Trillian2Adium you can convert all your Trillian logs into Adium transcripts!
-
-Download from its [Adium Xtra page](http://www.adiumxtras.com/index.php?a=xtras&xtra_id=6918).  
-Sources can be found on [GitHub](https://github.com/NeQuissimus/Trillian2Adium) (Beware, code is ugly!)
-
-## CarbonKiwi
-
-CarbonKiwi is a theme for the Twitter client Kiwi.app. Is is mostly based on black and blue colours, while keeping it a simple theme. Download it from [KiwiThemes](http://kiwithemes.com/themes/?search=CarbonKiwi).
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-16920656-2");
+    pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
