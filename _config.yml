@@ -1,0 +1,8 @@
+title: NeQuissimus Online
+description: Tim Steinbach
+google_analytics: UA-16920656-2
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
