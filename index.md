@@ -11,8 +11,9 @@
 
 # Hacking
 
-- [NixOS](https://nixos.org) ([Project member](https://github.com/orgs/NixOS/people?utf8=%E2%9C%93&query=NeQuissimus) since 2016)
-- [GitHub](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3ANeQuissimus+is%3Aclosed)
+- [Scalaz](https://github.com/scalaz/) - Scala library for functional programming ([Project member](https://github.com/orgs/scalaz/people?utf8=%E2%9C%93&query=NeQuissimus) since 2017)
+- [NixOS](https://nixos.org) - The purely functional Linux distribution ([Project member](https://github.com/orgs/NixOS/people?utf8=%E2%9C%93&query=NeQuissimus) since 2016)
+- [GitHub](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3ANeQuissimus+is%3Aclosed) - Various Open Source contributions
 
 # Writing
 
