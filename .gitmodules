@@ -1,0 +1,6 @@
+[submodule "themes/codinfox-zola"]
+	path = themes/codinfox-zola
+	url = git@github.com:svavs/codinfox-zola.git
+[submodule "themes/zola-academic"]
+	path = themes/zola-academic
+	url = git@github.com:zola-academic/zola-academic.git
