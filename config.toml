@@ -14,7 +14,8 @@ experience = [
   { company = "eSentire", start_year = 2020, title = "Manager - Advanced Threat Analytics", tasks = [
     "Enabling the success of a small team, multiple research students and co-ops",
     "Supporting the personal growth of a diverse team",
-    "Interface between research division and other parts of the organization"
+    "Interface between research division and other parts of the organization",
+    "Using Machine Learning to detect adversarial tactics and techniques"
   ] },
   { company = "eSentire", start_year = 2018, end_year = 2020, title = "Senior Software Developer", tasks = [
     "High-performance data pipelines using Kafka Streams, Scala, deeplearning4j for machine learning",
