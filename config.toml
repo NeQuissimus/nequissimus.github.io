@@ -60,6 +60,7 @@ social_icons = [
   {icon="fa-twitter", icon_pack="fab", link="https://twitter.com/Tim_Steinbach" }
 ]
 youtube = [
+  {id = "8g8dNnLTIm8", description = "Get out of my cloud! Detecting cloud enumeration attacks using Machine Learning (Ai4 2021)"},
   {id = "_LDzO5_d1a0", description = "Sane System Management with NixOS - I Do Declare! (LambdaConf 2019)"},
   {id = "B8MEz-lPOq4", description = "Refined JSON - Making sense of stringly-typed data (Scala Up North 2018)"}
 ]
