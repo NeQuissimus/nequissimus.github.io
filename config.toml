@@ -11,7 +11,7 @@ title = "NeQuissimus"
 author = "Tim Steinbach"
 contact_links = []
 experience = [
-  { company = "eSentire", start_year = 2020, title = "Manager - Advanced Threat Analytics", tasks = [
+  { company = "eSentire", start_year = 2020, end_year = 2021, title = "Manager - Advanced Threat Analytics", tasks = [
     "Enabling the success of a small team, multiple research students and co-ops",
     "Supporting the personal growth of a diverse team",
     "Interface between research division and other parts of the organization",
@@ -51,7 +51,6 @@ menu_right = [
   { name = "YouTube", link = "/#youtube" }
 ]
 portrait = "/static/tim_steinbach_small.jpg"
-organizations = [{ name = "@eSentire", link = "https://esentire.com/" }]
 role = "Developer, manager, researcher, leader"
 social_icons = [
   {icon="fa-book", icon_pack="fas", link="http://markdownbyexample.com" },
