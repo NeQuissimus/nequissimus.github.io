@@ -51,6 +51,7 @@ menu_right = [
   { name = "YouTube", link = "/#youtube" }
 ]
 portrait = "/static/tim_steinbach_small.jpg"
+organizations = []
 role = "Developer, manager, researcher, leader"
 social_icons = [
   {icon="fa-book", icon_pack="fas", link="http://markdownbyexample.com" },
