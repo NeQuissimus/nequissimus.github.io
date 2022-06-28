@@ -15,7 +15,7 @@ experience = [
     "Facilitating lakehouse scaling as project champion/leader",
     "Creation of high-velocity data pipelines",
     "Mentoring team members",
-  ] },[
+  ] },
   { company = "eSentire", start_year = 2020, end_year = 2021, title = "Manager - Advanced Threat Analytics", tasks = [
     "Enabling the success of a small team, multiple research students and co-ops",
     "Supporting the personal growth of a diverse team",
