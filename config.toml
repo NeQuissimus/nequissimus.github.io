@@ -11,6 +11,11 @@ title = "NeQuissimus"
 author = "Tim Steinbach"
 contact_links = []
 experience = [
+  { company = "Shopify", start_year = 2021, title = "Senior Data Developer - Lakehouse", tasks = [
+    "Facilitating lakehouse scaling as project champion/leader",
+    "Creation of high-velocity data pipelines",
+    "Mentoring team members",
+  ] },[
   { company = "eSentire", start_year = 2020, end_year = 2021, title = "Manager - Advanced Threat Analytics", tasks = [
     "Enabling the success of a small team, multiple research students and co-ops",
     "Supporting the personal growth of a diverse team",
@@ -52,7 +57,7 @@ menu_right = [
 ]
 portrait = "/static/tim_steinbach_small.jpg"
 organizations = []
-role = "Developer, manager, researcher, leader"
+role = "Scala Developer, Data Wrangler, Leader"
 social_icons = [
   {icon="fa-book", icon_pack="fas", link="http://markdownbyexample.com" },
   {icon="fa-github", icon_pack="fab", link="https://github.com/NeQuissimus" },
