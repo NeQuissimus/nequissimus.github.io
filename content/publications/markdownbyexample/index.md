@@ -18,6 +18,6 @@ links = [
 publication = "Self-published"
 year = 2012
 
-image = { path = "mbe.png", style="figure", caption = "Markdown By Example cover" }
+image = { path = "/publications/markdownbyexample/mbe.png", style="figure", caption = "Markdown By Example cover" }
 
 +++
