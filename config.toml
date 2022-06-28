@@ -55,7 +55,7 @@ menu_right = [
   { name = "Publications", link = "/#publications" },
   { name = "YouTube", link = "/#youtube" }
 ]
-portrait = "/static/tim_steinbach_small.jpg"
+portrait = "/tim_steinbach_small.jpg"
 organizations = []
 role = "Scala Developer, Data Wrangler, Leader"
 social_icons = [
