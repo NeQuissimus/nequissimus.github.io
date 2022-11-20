@@ -62,7 +62,7 @@ social_icons = [
   {icon="fa-book", icon_pack="fas", link="http://markdownbyexample.com" },
   {icon="fa-github", icon_pack="fab", link="https://github.com/NeQuissimus" },
   {icon="fa-linkedin", icon_pack="fab", link="https://www.linkedin.com/in/timsteinbach" },
-  {icon="fa-twitter", icon_pack="fab", link="https://twitter.com/Tim_Steinbach" }
+  {icon="fa-mastodon", icon_pack="fab", link="https://mastodon.social/@NeQuissimus" }
 ]
 youtube = [
   {id = "8g8dNnLTIm8", description = "Get out of my cloud! Detecting cloud enumeration attacks using Machine Learning (Ai4 2021)"},
