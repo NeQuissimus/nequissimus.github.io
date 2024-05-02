@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
-{% import "zola-academic/templates/colors.html" as colors %}
 {% block content %}
 <section class="section">
     <div class="container">
@@ -10,17 +9,20 @@
                     <div class="column is-one-third-desktop">
                         <div class="box has-text-centered">
                             <figure class="image is-192x192 is-centered is-inline-block">
-                                <img class="is-rounded" src="{{ resize_image(path="../" ~ config.extra.portrait, width=384, height=384) | safe }}">
+                                {% set img = resize_image(path="../" ~ config.extra.portrait, width=192, height=192,
+                                format="webp") %}
+                                <img class="is-rounded" src="{{ img.url | safe }}">
                             </figure>
                             <div class="is-size-3 content"><strong>{{ config.extra.author }}</strong></div>
                             <div class="is-size-5">{{ config.extra.role }}</div>
                             {% for organization in config.extra.organizations %}
-                            <div class="is-size-5 content"><a href="{{ organization.link }}"><strong>{{ organization.name }}</strong></a></div>
+                            <div class="is-size-5 content"><a href="{{ organization.link }}"><strong>{{
+                                        organization.name }}</strong></a></div>
                             {% endfor %}
                             <div class="content">
                                 {% for icon in config.extra.social_icons %}
                                 <a class="icon is-large fa-3x" href="{{icon.link | safe }}">
-                                    <i class="has-text-{{ colors::style() }} {{icon.icon_pack}} {{ icon.icon }}"></i>
+                                    <i class="has-text-link {{icon.icon_pack}} {{ icon.icon }}"></i>
                                 </a>&nbsp;
                                 {% endfor %}
                             </div>
@@ -39,24 +41,25 @@
                             <div class="column is-full content">
                                 <h4>Experience</h4>
                                 {% for experience in config.extra.experience %}
-                                    <div class="columns is-mobile">
-                                        <span class="icon is-medium column is-narrow is-mobile">
-                                            <i class="fas fa-building"></i>
-                                        </span>
-                                        <span class="column">
-                                            <strong>{{ experience.title }}</strong> @ <span class="has-text-grey">{{ experience.company }}</span>&nbsp;&#40;
-                                            {% if experience.end_year %}
-                                            {{ experience.start_year }}-{{experience.end_year }}
-                                            {% else %}
-                                            Since {{ experience.start_year }}
-                                            {% endif %}&#41;
-                                            <ul class="fancy">
-                                              {% for task in experience.tasks %}
-                                              <li>{{ task }}</li>
-                                              {% endfor %}
-                                            </ul>
-                                        </span>
-                                    </div>
+                                <div class="columns is-mobile">
+                                    <span class="icon is-medium column is-narrow is-mobile">
+                                        <i class="fas fa-building"></i>
+                                    </span>
+                                    <span class="column">
+                                        <strong>{{ experience.title }}</strong> @ <span class="has-text-grey">{{
+                                            experience.company }}</span>&nbsp;&#40;
+                                        {% if experience.end_year %}
+                                        {{ experience.start_year }}-{{experience.end_year }}
+                                        {% else %}
+                                        Since {{ experience.start_year }}
+                                        {% endif %}&#41;
+                                        <ul class="fancy">
+                                            {% for task in experience.tasks %}
+                                            <li>{{ task }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </span>
+                                </div>
                                 {% endfor %}
                             </div>
                         </div>
@@ -67,6 +70,9 @@
     </div>
 </section>
 
+{% set img = resize_image(path="../" ~ config.extra.portrait, width=192, height=192,
+format="webp") %}
+
 {% if config.extra.show_publications %}
 {% set publications = get_section(path="publications/_index.md") %}
 <section class="section">
@@ -74,10 +80,12 @@
         <div class="columns is-desktop">
             <div class="column is-one-third-desktop">
                 <h1 class="title is-1" id="publications">
+                    <a class="has-text-link" href="{{ get_url(path='publications') | safe }}">
                         {{ publications.title }}
+                    </a>
                 </h1>
                 {% if publications.description %}
-                    <h4 class="title is-4">{{ publications.description }}</h4>
+                <h4 class="title is-4">{{ publications.description }}</h4>
                 {% endif %}
             </div>
             <ul class="column is-two-thirds-desktop">
@@ -99,7 +107,7 @@
         <div class="columns is-desktop">
             <div class="column is-one-third-desktop">
                 <h1 class="title is-1" id="youtube">
-                  YouTube
+                    YouTube
                 </h1>
             </div>
             <ul class="column is-two-thirds-desktop">
@@ -121,12 +129,12 @@
         <div class="columns is-desktop">
             <div class="column is-one-third-desktop">
                 <h1 class="title is-1" id="posts">
-                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='posts') | safe }}">
+                    <a class="has-text-link" href="{{ get_url(path='posts') | safe }}">
                         {{ posts.title }}
                     </a>
                 </h1>
                 {% if posts.description %}
-                    <h4 class="title is-4">{{ posts.description }}</h4>
+                <h4 class="title is-4">{{ posts.description }}</h4>
                 {% endif %}
             </div>
             <ul class="column is-two-thirds-desktop">
@@ -149,21 +157,21 @@
         <div class="columns is-desktop">
             <div class="column is-one-third-desktop">
                 <h1 class="title is-1" id="projects">
-                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='projects') | safe }}">
-                       {{ projects.title }}
+                    <a class="has-text-link" href="{{ get_url(path='projects') | safe }}">
+                        {{ projects.title }}
                     </a>
                 </h1>
                 {% if projects.description %}
-                    <h4 class="title is-4">{{ projects.description }}</h4>
+                <h4 class="title is-4">{{ projects.description }}</h4>
                 {% endif %}
             </div>
             <ul class="column is-two-thirds-desktop">
                 <div class="columns is-multiline is-desktop">
                     {% for project_path in projects.pages %}
-                        <li class="content column is-one-third">
-                            {% set project = get_page(path=project_path.relative_path) %}
-                            {{ macros::project_header(project=project) }}
-                        </li>
+                    <li class="content column is-one-third">
+                        {% set project = get_page(path=project_path.relative_path) %}
+                        {{ macros::project_header(project=project) }}
+                    </li>
                     {% endfor %}
                 </div>
             </ul>
@@ -171,4 +179,5 @@
     </div>
 </section>
 {% endif %}
+
 {% endblock content %}
