@@ -11,7 +11,12 @@ title = "NeQuissimus"
 author = "Tim Steinbach"
 contact_links = []
 experience = [
-  { company = "Shopify", start_year = 2021, title = "Senior Data Developer - Lakehouse", tasks = [
+  { company = "Shopify", start_year = 2024, title = "Staff Infrastructure Engineer - Ingestion", tasks = [
+    "Technical leadership",
+    "Ingestion of mission-critical datasets into BigQuery",
+    "Project champion, mentor, leader"
+  ] },
+  { company = "Shopify", start_year = 2021, end_year = 2024, title = "Senior Data Developer - Lakehouse", tasks = [
     "Facilitating lakehouse scaling as project champion/leader",
     "Creation of high-velocity data pipelines",
     "Mentoring team members",
@@ -61,8 +66,7 @@ role = "Scala Developer, Data Wrangler, Leader"
 social_icons = [
   {icon="fa-book", icon_pack="fas", link="http://markdownbyexample.com" },
   {icon="fa-github", icon_pack="fab", link="https://github.com/NeQuissimus" },
-  {icon="fa-linkedin", icon_pack="fab", link="https://www.linkedin.com/in/timsteinbach" },
-  {icon="fa-mastodon", icon_pack="fab", link="https://mastodon.social/@NeQuissimus" }
+  {icon="fa-linkedin", icon_pack="fab", link="https://www.linkedin.com/in/timsteinbach" }
 ]
 youtube = [
   {id = "8g8dNnLTIm8", description = "Get out of my cloud! Detecting cloud enumeration attacks using Machine Learning (Ai4 2021)"},
